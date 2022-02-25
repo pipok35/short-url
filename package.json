@@ -1,0 +1,31 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "client": "npm run start --prefix client",
+    "server": "nodemon index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "concurrently": "^7.0.0",
+    "config": "^3.3.7",
+    "dotenv": "^15.0.1",
+    "express": "^4.17.3",
+    "macro-css": "^1.0.5",
+    "mongoose": "^5.13.14",
+    "nodemon": "^2.0.15",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.1.2",
+    "react-dom": "^17.0.2",
+    "shortid": "^2.2.16"
+  },
+  "proxy": "http://localhost:5000",
+  "description": "",
+  "devDependencies": {
+    "react-app-rewired": "^2.2.1"
+  }
+}
