@@ -48,7 +48,7 @@ function App() {
     }
     try {
       await axios
-        .post('http://localhost:5000/api/shorturls', {
+        .post('http://localhost:5000/api/shortUrls', {
           fullUrl: link,
           domainUrl: domain,
         })
